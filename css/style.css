@@ -89,6 +89,7 @@ footer nav a:hover {
 .cont-carrusel img {
     filter: brightness(50%);
 }
+
 /* fin de carrusel */
 
 
@@ -372,6 +373,6 @@ footer nav a {
 
 /* border: 1px solid black; */
 
-.gral-texto{
+.gral-texto {
     font-size: 1.1em;
 }
