@@ -57,7 +57,7 @@ header {
 
 .navegacion>a {
     color: #9c9da1;
-    font-size: 15px;
+    font-size: 1.1em;
     text-decoration: none;
     margin: 20px;
 
@@ -360,7 +360,7 @@ footer {
 }
 
 footer nav a {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #9c9da1;
     text-decoration: none;
     text-align: left;
