@@ -86,6 +86,9 @@ footer nav a:hover {
     height: 600px;
 }
 
+.cont-carrusel img {
+    filter: brightness(50%);
+}
 /* fin de carrusel */
 
 
@@ -104,14 +107,12 @@ footer nav a:hover {
 }
 
 .eje {
-    font-size: 25px;
+    font-size: 2em;
     font-weight: bold;
 
 }
 
-.cont-carrusel img {
-    filter: brightness(50%);
-}
+
 
 .botones-superiores button {
 
@@ -340,14 +341,13 @@ article div p {
 
 
 
-/* form fin */
+/* fin de formulario */
 
 /* inicio de footer */
 
 footer {
-
+    margin-top: 25px;
     background-color: #1e4f6d;
-
 }
 
 .navegacion-footer {
@@ -371,3 +371,7 @@ footer nav a {
 
 
 /* border: 1px solid black; */
+
+.gral-texto{
+    font-size: 1.1em;
+}
