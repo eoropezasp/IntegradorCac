@@ -381,13 +381,119 @@ footer nav a {
     
     display: flex;
     justify-content: center;
-   
-    
-    
 
 }
 
-.cuadro_cat{
-    border: 1px solid black;
-    margin: 10px;
+.cuadro_cat1, .cuadro_cat2, .cuadro_cat3{
+    
+    margin: 20px 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.cuadro_cat1{
+    border: 2px solid #007bff;
+}
+
+.cuadro_cat2{
+    border: 2px solid #17a2b8;
+}
+
+.cuadro_cat3{
+    border: 2px solid #ffc107;
+}
+
+main div p{
+text-align: center;
+}
+
+
+
+
+
+
+
+
+#datos_compra{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#caja_compra{
+    width: 620px;
+    
+    /*borrar*/
+    
+}
+
+
+
+.centrado{
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.entrada_datos{
+    width: 305px;
+    height: 30px;
+    border-style: none;
+    border: 1px solid rgb(122, 118, 118);
+    border-radius: 5px;
+    
+   
+}
+
+.correo{
+    width: 100%;
+    margin-top: 20px;
+    border-style: none;
+    border: 1px solid rgb(122, 118, 118);
+    border-radius: 5px;
+    
+}
+
+.espacio_cobro{
+    width: 100%;
+    height: 40px;
+    background-color: #cce5ff;
+    border-radius: 5px;
+    display: table;
+    margin-top: 20px;
+
+}
+
+#total_text{
+   width: 25%;
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+   
+}
+
+#total_precio{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    
+}
+#bottones_compra{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#bottones_compra button{
+    width: 300px;
+    height: 37px;
+    border-radius: 5px;
+    background-color: #97c93e;
+
+
+
 }
