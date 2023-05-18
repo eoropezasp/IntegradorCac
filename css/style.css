@@ -7,6 +7,33 @@
 }
 
 
+
+body {
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #9E69C5 0%, #E71964 25%, #d079a5 51%, #6E2F93 100%);
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    
+
+0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0% 50%;
+}
+}
+
+
+
+
+
 /* inicio de header */
 header {
     display: flex;
@@ -377,34 +404,37 @@ footer nav a {
     font-size: 1.1em;
 }
 
-#categoria{
-    
+#categoria {
+
     display: flex;
     justify-content: center;
 
 }
 
-.cuadro_cat1, .cuadro_cat2, .cuadro_cat3{
-    
+.cuadro_cat1,
+.cuadro_cat2,
+.cuadro_cat3 {
+
     margin: 20px 5px;
     text-align: center;
     padding: 5px;
 }
 
-.cuadro_cat1{
+.cuadro_cat1 {
     border: 2px solid #007bff;
+
 }
 
-.cuadro_cat2{
+.cuadro_cat2 {
     border: 2px solid #17a2b8;
 }
 
-.cuadro_cat3{
+.cuadro_cat3 {
     border: 2px solid #ffc107;
 }
 
-main div p{
-text-align: center;
+main div p {
+    text-align: center;
 }
 
 
@@ -414,50 +444,52 @@ text-align: center;
 
 
 
-#datos_compra{
-    
+
+
+#datos_compra {
+
     display: flex;
     justify-content: center;
-    
-    
+
+
 }
 
-#caja_compra{
+#caja_compra {
     width: 620px;
-    
+
     /*borrar*/
-    
-}
-
-
-
-.centrado{
-display: flex;
-justify-content: space-between;
-
 
 }
 
-.entrada_datos{
+
+
+.centrado {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.entrada_datos {
     width: 305px;
     height: 30px;
     border-style: none;
     border: 1px solid rgb(122, 118, 118);
     border-radius: 5px;
-    
-   
+
+
 }
 
-.correo{
+.correo {
     width: 100%;
     margin-top: 20px;
     border-style: none;
     border: 1px solid rgb(122, 118, 118);
     border-radius: 5px;
-    
+
 }
 
-.espacio_cobro{
+.espacio_cobro {
     width: 100%;
     height: 40px;
     background-color: #cce5ff;
@@ -467,33 +499,41 @@ justify-content: space-between;
 
 }
 
-#total_text{
-   width: 25%;
-    
+#total_text {
+    width: 25%;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-   
 }
 
-#total_precio{
+#total_precio {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
-    
+
 }
-#bottones_compra{
+
+#bottones_compra {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-#bottones_compra button{
+#bottones_compra button {
     width: 300px;
     height: 37px;
+    border-style: none;
     border-radius: 5px;
-    background-color: #97c93e;
+    background-color: #21be43;
+    color: rgb(255, 255, 255);
+}
 
+#bottones_compra button:hover {
+    background-color: #29a744;
+}
 
-
+.centrado legend {
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 5px;
 }

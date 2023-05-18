@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+    <script src="./js/ventaTicket.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>venta</title>
 </head>
 
 <body>
@@ -66,22 +66,22 @@
         </div>
 
 
-        <div >
+        <div>
             <p>VENTA</p>
             <p>VALOR DE TICKET $200</p>
         </div>
 
-
         <div id="datos_compra">
+
 
             <div id="caja_compra">
                 <div class="centrado">
-                    <input class="entrada_datos" type="text" placeholder="Nombre">
-                    <input class="entrada_datos" type="text" placeholder="Apellido">
+                    <input id="nombre" class="entrada_datos" type="text" placeholder="Nombre" value="">
+                    <input id="apellido" class="entrada_datos" type="text" placeholder="Apellido" value="">
                 </div>
 
                 <div>
-                    <input class="correo" type="email" placeholder="Correo">
+                    <input id="email" class="correo" type="email" placeholder="Correo" value="">
                 </div>
 
 
@@ -89,29 +89,30 @@
                 <div class="centrado">
                     <div>
                         <legend>Cantidad</legend><br>
-                        <input class="entrada_datos" type="number" id="cant" name="cant" placeholder="cantidad">
+                        <input class="entrada_datos" type="number" id="cant" name="cant" placeholder="cantidad" value="">
 
                     </div>
 
 
                     <div>
                         <legend>Categoria</legend><br>
-                        <select name="" id="" class="entrada_datos">
-                            <option value="0">Estudiante</option>
-                            <option value="0">Trainee</option>
-                            <option value="0">Junior</option>
+                        <select name="" id="categoriaSelect" class="entrada_datos" value="">
+                            <option value="0.8">Estudiante</option>
+                            <option value="0.5">Trainee</option>
+                            <option value="0.15">Junior</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="espacio_cobro">
                     <p id="total_text">Total a pagar: $</p>
-                    <p id="total_precio">4546</p>
+                    <p id="total_precio"></p>
                 </div>
 
                 <div id="bottones_compra">
                     <button type="button">Borrar</button>
-                    <button type="button">Resumen</button>
+                    <button type="submit" onclick="calcularCompra()">Resumen</button>
+                    
                 </div>
 
             </div>
