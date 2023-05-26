@@ -89,7 +89,7 @@
                 <div class="centrado">
                     <div>
                         <legend>Cantidad</legend><br>
-                        <input class="entrada_datos" type="number" id="cant" name="cant" placeholder="cantidad" value="">
+                        <input class="entrada_datos" type="number" id="cant" name="cant" placeholder="cantidad" value="" min="1">
 
                     </div>
 
@@ -111,8 +111,8 @@
                 </div>
 
                 <div id="bottones_compra">
-                    <button type="button">Borrar</button>
-                    <button type="submit" onclick="calcularCompra()">Resumen</button>
+                    <button type="button" onclick="limpiarCampos()">Borrar</button>
+                    <button type="button" onclick="calcularCompra()">Resumen</button>
                     
                 </div>
 

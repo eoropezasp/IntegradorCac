@@ -10,15 +10,20 @@ categoria=document.getElementById('categoriaSelect'),
 totalAPagar=document.getElementById('total_precio');
 
 
+
+
+
 function calcularCompra(){
 if(comprobarCampos()){
-resultado= (PRECIO_TICKET-(PRECIO_TICKET*parseInt(categoria.value) ))*parseInt(cantidad.value) ;
+
+    console.log(PRECIO_TICKET*parseFloat(categoria.value))
+resultado= (PRECIO_TICKET-(PRECIO_TICKET*parseFloat(categoria.value) ))*parseFloat(cantidad.value) ;
 console.log(resultado + typeof(resultado));
 
 totalAPagar.innerHTML=resultado;
-console.log("pasamos!!!");
+
 }else{
-    console.log("no pasamos");
+    
     
 }
 }
@@ -26,4 +31,12 @@ console.log("pasamos!!!");
 function comprobarCampos(){
     return datosValidados = (nombre.value !== "")&&(apellido.value!=="")&&
     (email.value!=="")&&(cantidad.value!=="");
+}
+
+function limpiarCampos(){
+   nombre.value="";
+   apellido.value="";
+   email.value="";
+   cantidad.value="";
+   totalAPagar.innerHTML="";
 }
