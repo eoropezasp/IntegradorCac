@@ -23,7 +23,7 @@ console.log(resultado + typeof(resultado));
 totalAPagar.innerHTML=resultado;
 
 }else{
-    
+    alert("FALTAN RELLENAR CAMPOS")
     
 }
 }
